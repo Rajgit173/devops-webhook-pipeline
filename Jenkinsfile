@@ -22,6 +22,13 @@ echo 'Running tests...'
 echo 'Tests completed successfully'
 }
 }
+stage('Application check'){
+steps {
+	sh 'ls -la'
+	sh 'cat index.html'
+}
+}
+
 stage('Success'){
 steps {
 echo '========================================='
