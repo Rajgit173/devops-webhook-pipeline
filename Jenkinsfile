@@ -30,7 +30,8 @@ steps {
 }
 stage('Docker build'){
 steps {
-echo 'Testing application...'
+sh 'pwd'
+sh 'ls -la'
 sh 'docker build -t devops-webhook-app .'
 }
 }
