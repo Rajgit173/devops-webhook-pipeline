@@ -28,6 +28,11 @@ steps {
 	sh 'cat index.html'
 }
 }
+stage('Docker build'){
+steps {
+echo 'Testing application...'
+}
+}
 
 stage('Success'){
 steps {
