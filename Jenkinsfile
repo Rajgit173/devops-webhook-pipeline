@@ -31,6 +31,7 @@ steps {
 stage('Docker build'){
 steps {
 echo 'Testing application...'
+sh 'docker build -t devops-webhook-app .'
 }
 }
 
